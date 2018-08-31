@@ -34,12 +34,14 @@ int main(int argc, char *argv[]){
 		{
 			answer = nums[i] * nums[i+1] * nums[i+2];
 			printf("Answer: %d * %d * %d = %d\n",nums[i],nums[i+1],nums[i+2],answer);
+			i = 0;
 		}//end of reading while loop
 	//read stdin
 	}else{
 		while(scanf("%d%d%d", &nums[i],&nums[i+1],&nums[i+2]) == 3){
 			answer = nums[i] * nums[i+1] * nums[i+2];
 			printf("Answer: %d * %d * %d = %d\n", nums[i], nums[i+1], nums[i+2], answer);
+			i = 0;
 		}
 	}
 	return 0;
